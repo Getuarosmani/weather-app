@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --body-first-gradient-color: #F5EEFF;
+  --body-second-gradient-color: #DAC3F8;
+  --app-first-gradient-color: #352163;
+  --app-second-gradient-color: #33143c;
+}
+
+.custom-scrollbar {
+  scrollbar-color: transparent transparent;
+}
+
+@media (max-width: 508px) {
+  .costum-s-size{
+    border: none;
+  }
+}
