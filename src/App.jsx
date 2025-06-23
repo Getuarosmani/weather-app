@@ -93,6 +93,7 @@ function App() {
                 p-5
                 h-full
                 costum-s-size
+                rounded-3xl	
                 "
             >
                 <SearchSection
