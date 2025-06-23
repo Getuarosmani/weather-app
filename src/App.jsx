@@ -65,28 +65,33 @@ function App() {
 
     return (
         <div className="
-            flex
-            items-center
-            justify-center
-            min-h-screen
-            h-auto
-            bg-gradient-to-b from-[var(--app-first-gradient-color)] to-[var(--app-second-gradient-color)]
-            after:w-full
-            after:absolute
-            after:bg-[url('/weather-app/clouds.png')]
-            after:bg-cover 
-            after:z-0
-            after:h-full    
-        ">
+        relative
+        flex
+        items-center
+        justify-center
+        min-h-screen
+        h-auto
+        bg-gradient-to-b from-[var(--app-first-gradient-color)] to-[var(--app-second-gradient-color)]
+        after:content-['']
+        after:absolute
+        after:inset-0
+        after:w-full
+        after:h-full
+        after:bg-[url('/weather-app/clouds.png')]
+        after:bg-cover
+        after:bg-no-repeat
+        after:z-0
+">
+
             <div className="
                 relative
                 w-full
                 max-w-lg
-                rounded-3xl
                 text-white
                 border-4
                 border-white
                 p-5
+                h-full
                 costum-s-size
                 "
             >
