@@ -58,7 +58,7 @@ function App() {
 
 
         const defaultCity = 'New York'
-        const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${defaultCity}&days=2`;
+        const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${defaultCity}&days=2`;
         getWeatherDetalis(API_URL);
 
     }, [])
@@ -73,11 +73,10 @@ function App() {
             bg-gradient-to-b from-[var(--app-first-gradient-color)] to-[var(--app-second-gradient-color)]
             after:w-full
             after:absolute
-            after:bg-[url(clouds.png)]
+            after:bg-[url('/weather-app/clouds.png')]
             after:bg-cover 
             after:z-0
-            after:h-full
-            
+            after:h-full    
         ">
             <div className="
                 relative
