@@ -6,7 +6,7 @@ export const SearchSection = ({
 }) => {
   const handleSearchbar = (e) => {
     e.preventDefault();
-    const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${searchValue}&days=2`;
+    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${searchValue}&days=2`;
     getWeatherDetalis(API_URL);
   };
 
@@ -14,7 +14,7 @@ export const SearchSection = ({
     navigator.geolocation.getCurrentPosition(
       (position) => {
         const { latitude, longitude } = position.coords;
-        const API_URL = `http://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${latitude},${longitude}&days=2`;
+        const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=e462fcc5ba8c474d8e2172505252405&q=${latitude},${longitude}&days=2`;
         getWeatherDetalis(API_URL);
       },
       () => {
