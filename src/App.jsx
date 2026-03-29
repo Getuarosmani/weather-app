@@ -28,6 +28,14 @@ function App() {
 
         try {
             const response = await fetch(API_URL);
+
+            if (!response.ok) {
+                setNoResult(true);
+                setCurrentWeather({});
+                setHourlyForecast([]);
+                return;
+            }
+
             const data = await response.json();
 
             const temperature = data.current.temp_c;
