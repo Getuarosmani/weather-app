@@ -52,12 +52,12 @@ function App() {
         }
     };
 
-  useEffect(() => {
-    const defaultCity = 'New York';
-    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // ✅ Vite way
-    const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2`;
-    getWeatherDetalis(API_URL);
-}, [])
+    useEffect(() => {
+        const defaultCity = 'New York';
+        const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // ✅ Vite way
+        const API_URL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${defaultCity}&days=2`;
+        getWeatherDetalis(API_URL);
+    }, [])
 
     return (
         <div className="
